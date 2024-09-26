@@ -54,16 +54,19 @@ body {
 }
 #unity-progress-bar-empty {
     --leftPos: 0%;
-    --bottle-height: 200px;
+    --bottle-height: 14rem;
     position: relative;
     width: 80%;
-    height: 3.5rem;
+    height: 60px;
     margin: 10px 20px 20px 10px;
     text-align: left;
     background-color: #7D4C10;
     border: 1px solid rgb(221, 139, 139);
     padding: 2px;
 
+    @media only screen and (max-width: 800px) {
+        --bottle-height: 10rem;
+    }
     @media only screen and (max-width: 650px) {
         height: 35px;
         --bottle-height: 8rem;
